@@ -33,3 +33,4 @@ for i in prime:
                 res = res * i
     c1 = 0
 print(res)
+
