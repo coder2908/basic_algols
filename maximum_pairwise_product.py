@@ -14,3 +14,4 @@ for i in range(l-1,0,-1):
         b = n[i]
         break
 print(a*b)
+
