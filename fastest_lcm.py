@@ -10,12 +10,13 @@ nos.sort()
 res = 1
 for i in range(0,len(nos)):
     counter = 0
+    temp = nos[i]
     for j in range(i,len(nos)):
-        if (nos[i]!=1):
-            if(nos[j] % nos[i] == 0):
+        if (temp!=1):
+            if(nos[j] % temp == 0):
                 counter = counter + 1
-                if (counter == 1):
-                    res = res * nos[i]
-                nos[j] = nos[j] / nos[i]
+                nos[j] = nos[j] / temp
+    if (counter >= 1):
+        res = res * temp
     nos.sort()
 print(res)
